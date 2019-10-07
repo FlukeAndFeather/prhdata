@@ -1,12 +1,44 @@
 Package: prhdata
-Title: What the Package Does (One Line, Title Case)
+Title: Pitch-Roll-Heading Data
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
-License: What license it uses
+Authors@R: c(
+    person(given = "David",
+           family = "Cade",
+           role = c("aut"),
+           email = "davecade@stanford.edu",
+           comment = c(ORCID = "0000-0003-3641-1242")),
+    person(given = "Kelly",
+           family = "Barr",
+           role = c("aut")),
+    person(given = "John",
+           family = "Calambokidis",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-5028-7172")),
+    person(given = "Ari",
+           family = "Friedlaender",
+           role = c("aut")),
+    person(given = "Jeremy",
+           family = "Goldbogen",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-4170-7294")),
+    person(given = "Max",
+           family = "Czapanskiy",
+           role = c("trl", "cre"),
+           email = "maxczap@stanford.edu",
+           comment = c(ORCID = "0000-0002-6302-905X"))
+    )
+Description: Sample pitch-roll-heading data from a humpback whale. The example
+    data from Cade et al. 2018 JEB.
+URL: https://jeb.biologists.org/content/221/2/jeb170449
+License: CC0
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Imports: 
+    magrittr
+Suggests: 
+    RNetCDF,
+    testthat,
+    ggplot2,
+    cowplot
