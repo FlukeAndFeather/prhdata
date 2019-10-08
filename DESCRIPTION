@@ -27,16 +27,16 @@ Authors@R: c(
            email = "maxczap@stanford.edu",
            comment = c(ORCID = "0000-0002-6302-905X"))
     )
-Description: Sample pitch-roll-heading data from a humpback whale. The example
-    data from Cade et al. 2018 JEB.
+Description: Sample pitch-roll-heading data from a humpback whale. From Cade 
+    et al. 2018 in Journal of Experimental Biology.
+Depends: R (>= 2.10)
 URL: https://jeb.biologists.org/content/221/2/jeb170449
+BugReports: https://github.com/FlukeAndFeather/prhdata/issues
 License: CC0
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
-Imports: 
-    magrittr
 Suggests: 
     RNetCDF,
     testthat,
