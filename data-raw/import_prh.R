@@ -42,8 +42,10 @@ prh$Mw <- prh_list$Mw
 prh$Gw <- prh_list$Gw
 attr(prh, "fs") <- prh_list$fs
 
-# Create raw acceleration matrix with Afs attribute
-Araw <- prh_list$A
+# Create raw acceleration data frame with time, matrix, and Afs attribute
+Atime <- prh$time[1] + (seq(nrow(prh_list$A)) - 1) / prh_list$Afs
+Araw <- data.frame(time = Atime)
+Araw$A <- prh_list$A
 attr(Araw, "Afs") <- prh_list$Afs
 
 usethis::use_data(prh, Araw, overwrite = TRUE)

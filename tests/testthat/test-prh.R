@@ -41,3 +41,9 @@ test_that("prh$time is between 10:50 and 19:40 local time (US/Pacific)", {
                  as.POSIXct("2016-07-27 10:50", tz = "US/Pacific"),
                  as.POSIXct("2016-07-28 19:40", tz = "US/Pacific"))
 })
+
+test_that("time lines up in both data frames", {
+  expect_equal(prh$time[1], Araw$time[1])
+  expect_equal(max(Araw$time) + 1 / attr(Araw, "Afs"),
+               max(prh$time) + 1 / attr(prh, "fs"))
+})

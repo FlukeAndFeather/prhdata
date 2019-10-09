@@ -14,7 +14,8 @@
 #'
 #' Raw acceleration data from Cade et al. 2018 JEB, collected at 400 Hz.
 #'
-#' @format A matrix with three columns, corresponding to raw acceleration
-#' values in the x-, y-, and z-axes. Includes an attribute: \code{Afs}, the raw
-#' sampling frequency (400 Hz).
+#' @format A data frame matrix with two columns: \code{time} and \code{A}.
+#' \code{A} is a 3-column matrix corresponding to raw acceleration values in the
+#' x-, y-, and z-axes. Includes an attribute: \code{Afs}, the raw sampling
+#' frequency (400 Hz).
 "Araw"
