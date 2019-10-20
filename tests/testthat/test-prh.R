@@ -11,7 +11,6 @@ expect_between <- function(object, low, high) {
   act <- quasi_label(rlang::enquo(object), arg = "object")
 
   # 2. Call expect()
-  browser()
   expect(
     all(act$val >= low & act$val <= high, na.rm = TRUE),
     sprintf("Some elements of %s fall outside [%.2f, %.2f]", act$lab, low, high)

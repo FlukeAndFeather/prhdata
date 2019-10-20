@@ -1,14 +1,14 @@
 %% Load .mat files
-jiggle_dir = uigetdir('', 'Choose jiggle root folder');
+prhdata_dir = uigetdir('', 'Choose prhdata root folder');
 
 % load prh
-load([jiggle_dir '/data-raw/Example Data/mn160727-11 10Hzprh.mat'])
+load([prhdata_dir '/data-raw/Example Data/mn160727-11 10Hzprh.mat'])
 % load Adata
-load([jiggle_dir '/data-raw/Example Data/mn160727-11Adata.mat'])
+load([prhdata_dir '/data-raw/Example Data/mn160727-11Adata.mat'])
 
 %% Export NetCDF
 % Create .nc file
-ncfile = [jiggle_dir '/data-raw/mn160727-11 10Hzprh.nc'];
+ncfile = [prhdata_dir '/data-raw/mn160727-11 10Hzprh.nc'];
 ncid = netcdf.create(ncfile, 'CLOBBER');
 
 % Define dimensions (time, Atime, axis)
