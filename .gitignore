@@ -2,6 +2,6 @@
 .RData
 .Rproj.user
 *.DS_Store
-data-raw/Example\ Data/*
-data-raw/*.nc
-data-raw/*.zip
+Example\ Data.zip
+Example\ Data/
+data/
